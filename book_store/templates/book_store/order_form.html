@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="/order/">
+    {% csrf_token %}
+    <label for="book_title">Enter Book Title</label><br>
+    <input name="book_title"><br>
+    <label for="quantity">Number of books </label><br>
+    <input name="quantity"> <br>
+    <br>
+    <button type="submit"> Confirm Order </button>
+
+</form>
+</body>
+</html>

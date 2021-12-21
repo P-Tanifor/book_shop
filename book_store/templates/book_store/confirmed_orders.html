@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{%for order in confirmed_orders%}
+<div>title:{{order.book_title}}, ordered_by: {{order.ordered_by}}, order quantity: {{order.ordered_qty }}</div>
+{%endfor%}
+</body>
+</html>

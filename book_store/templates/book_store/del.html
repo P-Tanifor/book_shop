@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="/delete/">
+    {% csrf_token %}
+    <label for="book_title">Enter Book Title to Remove</label><br>
+    <input name="book_title"><br>
+    <br>
+    <button type="submit"> remove </button>
+
+</form>
+</body>
+</html>

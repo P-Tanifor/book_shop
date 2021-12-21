@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="/add_book/">
+    {% csrf_token %}
+    <label for="book_title">Enter Book Title to add</label><br>
+    <input name="book_title"><br>
+    <br>
+    <label for="quantity">Enter quantity </label><br>
+    <input name="quantity"><br>
+    <br>
+    <button type="submit"> Add </button>
+
+</form>
+</body>
+</html>
